@@ -10,6 +10,6 @@ COPY jiang-eureka-1.0.0-SNAPSHOT.jar /app/
 
 CMD java -jar /app/jiang-eureka-1.0.0-SNAPSHOT.jar
 
-ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "http://35.241.113.30:8888/jiang-eureka/dev/master", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/app.jar"]
+ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "http://35.241.113.30:8888/jiang-eureka/dev/master", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/jiang-eureka-1.0.0-SNAPSHOT.jar"]
 
 EXPOSE 8761
