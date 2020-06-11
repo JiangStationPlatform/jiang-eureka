@@ -8,23 +8,23 @@ services:
       - 8761:8761
     networks:
       - eureka_network1
-  jiang-eureka-2:
-    restart: always
-    image: jiang-eureka
-    container_name: jiang-eureka-2
-    ports:
-      - 8861:8761
-    networks:
-      - eureka_network2
-  jiang-eureka-3:
-    restart: always
-    image: jiang-eureka
-    container_name: jiang-eureka-3
-    ports:
-      - 8961:8761
-    networks:
-      - eureka_network3
+#  jiang-eureka-2:
+#    restart: always
+#    image: jiang-eureka
+#    container_name: jiang-eureka-2
+#    ports:
+#      - 8861:8761
+#    networks:
+#      - eureka_network2
+#  jiang-eureka-3:
+#    restart: always
+#    image: jiang-eureka
+#    container_name: jiang-eureka-3
+#    ports:
+#      - 8961:8761
+#    networks:
+#      - eureka_network3
 networks:
   eureka_network1:
-  eureka_network2:
-  eureka_network3:
+#  eureka_network2:
+#  eureka_network3:
